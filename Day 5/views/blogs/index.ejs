@@ -16,6 +16,11 @@
             <p>Author: <%= item.author %></p>
             <!-- <p>Date: <%= item.date %></p> -->
             <p>Comments: <%= item.Comments %></p>
+            <a href="/blogs/<%= item.id %>">View Blog</a>
+            <a href="/blogs/<%= item.id %>/edit">Edit Blog</a>
+            <a href="/blogs/<%= item.id %>?_method=DELETE">Delete Blog</a>
+            <form action="/blogs/<%= item.id %>?_method=DELETE" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
 
         </div>
 <% } %>

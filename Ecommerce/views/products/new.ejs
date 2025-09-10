@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') -%>
+<%- include('../partials/navbar') %>
+
+  <div class ="row">
+  <div class="col-lg-6 mx-auto">
+    <form action="/products" method="POST">
+      <div class="mb-3">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="name of the Product" required>     
+  </div>
+        <div class="mb-3">
+        <label for="name">Image:</label>
+        <input type="text" class="form-control" id="imageUrl" name="imageUrl" placeholder="Image URL" required>     
+  </div>
+        <div class="mb-3">
+        <label for="name">Price:</label>
+        <input type="text" class="form-control" id="price" name="price" placeholder="name of the Product" required>     
+  </div>
+        <div class="mb-3">
+        <label for="name">Description:</label>
+        <input type="text" class="form-control" id="description" name="description" row="5"placeholder="name of the Product" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>

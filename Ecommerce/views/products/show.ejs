@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate') -%>
+<%- include('../partials/navbar') %>
+
+  <div class ="row">
+  
+ 
+
+  <div class="col-lg-3 mt-3">
+  <div class="card" style="width: 18rem;">
+  <img src="<%=foundProduct.imageUrl%>" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h2 class="card-title">$<%=foundProduct.price%></h2>
+  <h5 class="card-title"><%=foundProduct.name%></h5>
+  <p class="card-text"><%=foundProduct.description%></p>
+  <a href="/products/<%=foundProduct._id%>/edit" class="btn btn-sm btn-light">Edit</a>
+ 
+  <a href="#" class="btn btn-sm btn-secondary">Add to Cart</a>
+  <a href="#" class="btn btn-sm btn-primary">Buy Product</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <h1 class="dispay-4">Leave a Reviews</h1>
+    <hr>    
+    </div>
+
+
+</div>
+
+</body>
+</html>
